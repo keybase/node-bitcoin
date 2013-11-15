@@ -18,7 +18,9 @@
   ],
   "devDependencies" : {
       "iced-coffee-script" : "*",
-      "iced-test" : "*"
+      "iced-test" : "*",
+      "browserify" : "*",
+      "icsify" : "*"
   },
   "author": "Maxwell Krohn <themax@gmail.com>",
   "license": "BSD-3-Clause",
