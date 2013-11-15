@@ -4,7 +4,7 @@
 * Copyright (c) 2009-2013, Jeff Mott. All rights reserved.
 * http://code.google.com/p/crypto-js/wiki/License
 */
-(function () {
+(function (Crypto) {
 
 	// Shortcuts
 	var C = Crypto,
@@ -132,4 +132,4 @@
 
 	SHA256._digestsize = 32;
 
-})();
+})(Crypto);
