@@ -68,6 +68,7 @@
 	* Ported to JavaScript by bitaddress.org
 	*/
 	ec.FieldElementFp.prototype.sqrt = function () {
+		throw new Error("this feature is disabled since we don't have a randomness source");
 		if (!this.q.testBit(0)) throw new Error("even value of q");
 
 		// p mod 4 == 3

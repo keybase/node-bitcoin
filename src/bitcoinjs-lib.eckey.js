@@ -1,15 +1,10 @@
 //https://raw.github.com/pointbiz/bitcoinjs-lib/9b2f94a028a7bc9bed94e0722563e9ff1d8e8db8/src/eckey.js
 (function (Bitcoin) {
 	Bitcoin.ECKey = (function () {
-		var ECDSA = Bitcoin.ECDSA;
 		var ecparams = EllipticCurve.getSECCurveByName("secp256k1");
 
 		var ECKey = function (input) {
-			if (!input) {
-				// Generate new key
-				var n = ecparams.getN();
-				this.priv = ECDSA.getBigRandom(n);
-			} else if (input instanceof BigInteger) {
+			if (input instanceof BigInteger) {
 				// Input is a private key value
 				this.priv = input;
 			} else if (Bitcoin.Util.isArray(input)) {
@@ -38,6 +33,8 @@
 					// Prepend zero byte to prevent interpretation as negative integer
 					this.priv = BigInteger.fromByteArrayUnsigned(bytes);
 				}
+			} else {
+				throw new Error("no plausible constructor behavior");	
 			}
 
 			this.compressed = (this.compressed == undefined) ? !!ECKey.compressByDefault : this.compressed;
@@ -170,14 +167,6 @@
 			else {
 				return this.getBitcoinHexFormat();
 			}
-		};
-
-		ECKey.prototype.sign = function (hash) {
-			return ECDSA.sign(hash, this.priv);
-		};
-
-		ECKey.prototype.verify = function (hash, sig) {
-			return ECDSA.verify(hash, sig, this.getPub());
 		};
 
 		/**
