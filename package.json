@@ -20,7 +20,8 @@
       "iced-coffee-script" : "*",
       "iced-test" : ">0.0.7",
       "browserify" : "*",
-      "icsify" : "*"
+      "icsify" : "*",
+      "colors" : "*"
   },
   "author": "Maxwell Krohn <themax@gmail.com>",
   "license": "BSD-3-Clause",
