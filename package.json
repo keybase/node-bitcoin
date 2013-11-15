@@ -2,9 +2,10 @@
   "name": "keybase-bitcoin",
   "version": "0.0.0",
   "description": "A stripped-down version of the Bitcoin JS libraries.  For now, it only generates wallet addresses.",
-  "main": "lib/index.js",
+  "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib" : "lib"
   },
   "scripts": {
     "test": "make test"
