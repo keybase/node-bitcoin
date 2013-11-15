@@ -1,5 +1,5 @@
 
-lib/index.js: src/pre.js \
+lib/lib.js: src/pre.js \
 	src/array.map.js \
 	src/biginteger.js \
 	src/cryptojs.js \

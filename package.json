@@ -1,0 +1,28 @@
+{
+  "name": "keybase-bitcoin",
+  "version": "0.0.0",
+  "description": "A stripped-down version of the Bitcoin JS libraries.  For now, it only generates wallet addresses.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keybase/node-bitcoin"
+  },
+  "keywords": [
+    "Bitcoin"
+  ],
+  "devDependencies" : {
+      "iced-coffee-script" : "*",
+      "iced-test" : "*"
+  },
+  "author": "Maxwell Krohn <themax@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/keybase/node-bitcoin/issues"
+  }
+}
