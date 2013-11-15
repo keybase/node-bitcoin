@@ -12,3 +12,10 @@ lib/lib.js: src/pre.js \
 	src/bitcoinjs-lib.util.js \
 	src/post.js
 	cat $^ > $@
+
+default: lib/lib.js
+
+test:
+	./node_modules/.bin/iced test/run.iced
+
+.PHONY: test
