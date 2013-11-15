@@ -1,4 +1,5 @@
 //https://raw.github.com/pointbiz/bitcoinjs-lib/9b2f94a028a7bc9bed94e0722563e9ff1d8e8db8/src/eckey.js
+// See here for license information: https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/LICENSE
 (function (Bitcoin) {
 	Bitcoin.ECKey = (function () {
 		var ecparams = EllipticCurve.getSECCurveByName("secp256k1");

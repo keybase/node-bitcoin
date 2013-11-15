@@ -1,4 +1,5 @@
 //https://raw.github.com/bitcoinjs/bitcoinjs-lib/09e8c6e184d6501a0c2c59d73ca64db5c0d3eb95/src/address.js
+// See here for license information: https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/LICENSE
 (function (Bitcoin) {
 	Bitcoin.Address = function (bytes) {
 		if ("string" == typeof bytes) {

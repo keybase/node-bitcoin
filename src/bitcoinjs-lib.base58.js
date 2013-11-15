@@ -1,4 +1,5 @@
 //https://raw.github.com/bitcoinjs/bitcoinjs-lib/c952aaeb3ee472e3776655b8ea07299ebed702c7/src/base58.js
+// See here for license information: https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/LICENSE
 (function (Bitcoin) {
 	Bitcoin.Base58 = {
 		alphabet: "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz",
