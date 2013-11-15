@@ -53,4 +53,4 @@
 
 		return hash;
 	};
-}(Bitcoin);
+})(Bitcoin);

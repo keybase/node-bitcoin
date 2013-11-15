@@ -7,11 +7,10 @@
 * Copyright Tom Wu, bitaddress.org  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
-(function (x) {
+(function (exports) {
 
 	// Constructor function of Global EllipticCurve object
-	var ec = x.EllipticCurve = function () { };
-
+	var ec = exports.EllipticCurve = function () { };
 
 	// ----------------
 	// ECFieldElementFp constructor
@@ -642,3 +641,5 @@
 		return ec.secNamedCurves[name]();
 	}
 })(exports);
+
+var EllipticCurve = exports.EllipticCurve;

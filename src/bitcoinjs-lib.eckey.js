@@ -269,4 +269,4 @@
 
 		return ECKey;
 	})();
-}(Bitcoin);
+})(Bitcoin);
