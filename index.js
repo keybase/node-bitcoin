@@ -16,3 +16,7 @@ exports.generate = function(buffer) {
     };
     return ret;
 };
+// allows generation of addresses for alternative cryptocurrencies
+exports.networkVersion = function(version) {
+    lib.Bitcoin.Address.networkVersion = version;
+};
